@@ -26,6 +26,4 @@ public/uploads
 # Ignore deploy secrets
 /config/deploy.rb
 /config/deploy/*
-/config/environments/integration.rb
-/config/environments/production.rb
 /Capfile

@@ -1,3 +1,14 @@
+GIT
+  remote: git@gitlab.coditdev.net:decidim/decidim-verifications-salou_census.git
+  revision: a324f412468a12ab98e51b56dcf7e0e82e82f699
+  tag: v0.1.0
+  specs:
+    decidim-verifications-salou_census (0.1.0)
+      decidim-admin (= 0.14.3)
+      decidim-core (= 0.14.3)
+      decidim-verifications (= 0.14.3)
+      rails (>= 5.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -703,6 +714,7 @@ DEPENDENCIES
   daemons
   decidim (~> 0.14.3)
   decidim-dev (~> 0.14.3)
+  decidim-verifications-salou_census!
   delayed_job_active_record
   faker (~> 1.8.4)
   figaro (>= 1.1.1)
@@ -719,4 +731,4 @@ RUBY VERSION
    ruby 2.5.1p57
 
 BUNDLED WITH
-   1.16.3
+   1.16.6

@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
-DECIDIM_VERSION = "~> 0.14.3"
+DECIDIM_VERSION = "~> 0.15.2"
 
 gem 'puma', '~> 3.0'
 gem 'uglifier', '>= 1.3.0'
@@ -14,8 +14,9 @@ gem 'openssl'
 
 gem 'figaro', '>= 1.1.1'
 
-gem 'decidim', DECIDIM_VERSION
-gem 'decidim-verifications-salou_census', git: "git@gitlab.coditdev.net:decidim/decidim-verifications-salou_census.git", tag: "v0.2.0"
+# gem 'decidim', DECIDIM_VERSION
+gem 'decidim', path: "../clean-decidim"
+gem 'decidim-verifications-salou_census', git: "git@gitlab.coditdev.net:decidim/decidim-verifications-salou_census.git", tag: "v0.3.0"
 
 group :development, :test do
   gem 'byebug', platform: :mri
@@ -24,7 +25,8 @@ group :development, :test do
 end
 
 group :development do
-  gem 'decidim-dev', DECIDIM_VERSION
+  # gem 'decidim-dev', DECIDIM_VERSION
+  gem 'decidim-dev', path: "../clean-decidim"
   gem 'web-console'
   gem 'listen', '~> 3.1.0'
   gem 'spring'

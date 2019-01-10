@@ -727,7 +727,7 @@ DEPENDENCIES
   binding_of_caller
   byebug
   daemons
-  decidim!
+  decidim (~> 0.15.2)
   decidim-dev!
   decidim-verifications-salou_census!
   delayed_job_active_record

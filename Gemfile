@@ -14,8 +14,7 @@ gem 'openssl'
 
 gem 'figaro', '>= 1.1.1'
 
-# gem 'decidim', DECIDIM_VERSION
-gem 'decidim', path: "../clean-decidim"
+gem 'decidim', DECIDIM_VERSION
 gem 'decidim-verifications-salou_census', git: "git@gitlab.coditdev.net:decidim/decidim-verifications-salou_census.git", tag: "v0.3.0"
 
 group :development, :test do

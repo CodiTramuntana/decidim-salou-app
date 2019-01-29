@@ -1,9 +1,9 @@
 GIT
   remote: git@gitlab.coditdev.net:decidim/decidim-verifications-salou_census.git
-  revision: 3ed53f3e174528e96aefe78cb3b060ab64287723
-  tag: v0.3.0
+  revision: 3a99b57e92bf3da11b636147d1879a30eb312bea
+  tag: v0.3.1
   specs:
-    decidim-verifications-salou_census (0.3.0)
+    decidim-verifications-salou_census (0.3.1)
       decidim-admin (~> 0.15.2)
       decidim-core (~> 0.15.2)
       decidim-verifications (~> 0.15.2)
@@ -742,4 +742,4 @@ RUBY VERSION
    ruby 2.5.1p57
 
 BUNDLED WITH
-   1.16.6
+   1.17.1

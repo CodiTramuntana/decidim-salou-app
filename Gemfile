@@ -17,6 +17,13 @@ gem 'figaro', '>= 1.1.1'
 gem 'decidim', DECIDIM_VERSION
 gem 'decidim-verifications-salou_census', git: "git@gitlab.coditdev.net:decidim/decidim-verifications-salou_census.git", tag: "v0.3.1"
 
+gem 'whenever'
+
+## Start force versions Gem
+gem 'graphiql-rails', '1.4.11'
+gem 'graphql', '1.8.10'
+## End force versions Gem
+
 group :development, :test do
   gem 'byebug', platform: :mri
   gem "better_errors"

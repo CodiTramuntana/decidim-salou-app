@@ -1,7 +1,9 @@
-PATH
-  remote: ..
+GIT
+  remote: git@gitlab.coditdev.net:decidim/decidim-verifications-salou_census.git
+  revision: ea485ec21d685f3e56616a243a9a1b17c2f3687a
+  tag: v0.3.2
   specs:
-    decidim-verifications-salou_census (0.3.1)
+    decidim-verifications-salou_census (0.3.2)
       decidim-admin (~> 0.16.0)
       decidim-core (~> 0.16.0)
       decidim-verifications (~> 0.16.0)

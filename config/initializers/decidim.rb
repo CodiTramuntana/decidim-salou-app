@@ -3,7 +3,7 @@
 Decidim.configure do |config|
   config.application_name = "Decidim Salou"
 
-  config.mailer_sender = "participacio@salou.cat"
+  config.mailer_sender = "participa@salou.cat"
 
   # Change these lines to set your preferred locales
   config.default_locale = :ca

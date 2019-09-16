@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 
 ruby RUBY_VERSION
 
-DECIDIM_VERSION = '~> 0.16.0'
+DECIDIM_VERSION = { git: 'https://github.com/decidim/decidim.git', branch: '0.18-stable' }
 
 gem 'daemons'
 gem 'delayed_job_active_record'
@@ -16,8 +16,13 @@ gem 'openssl'
 
 gem 'figaro', '>= 1.1.1'
 
+# Force gem version to fix:
+# undefined method `polymorphic?' for ActiveRecord::Reflection::PolymorphicReflection
+# See: https://github.com/activerecord-hackery/ransack/issues/1039
+gem 'ransack', '2.1.1'
+
 gem 'decidim', DECIDIM_VERSION
-gem 'decidim-verifications-salou_census', git: 'git@gitlab.coditdev.net:decidim/decidim-verifications-salou_census.git', tag: 'v0.3.2'
+gem 'decidim-verifications-salou_census', git: 'git@gitlab.coditdev.net:decidim/decidim-verifications-salou_census.git', tag: 'v0.3.3'
 
 gem 'whenever'
 

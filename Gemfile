@@ -8,9 +8,10 @@ DECIDIM_VERSION = { git: 'https://github.com/decidim/decidim.git', branch: '0.18
 
 gem 'daemons'
 gem 'delayed_job_active_record'
-gem 'faker', '~> 1.8.4'
 # gem 'puma', '~> 4.0'
 gem 'uglifier', '>= 1.3.0'
+# gem sprockets in version 4.0 breaks Decidim. Temporal fix at 10/10/2019
+gem "sprockets", "~> 3.7.2"
 
 gem 'openssl'
 
@@ -43,6 +44,7 @@ group :development, :test do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'byebug', platform: :mri
+  gem 'faker'
 end
 
 group :development do
